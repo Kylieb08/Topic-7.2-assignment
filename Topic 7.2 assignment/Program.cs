@@ -23,11 +23,13 @@
             Console.WriteLine();
             Thread.Sleep(1000);
 
+            Console.WriteLine("X \t Y");
+            Console.WriteLine("----------");
             for (int x = -10; x < 12; x = x + 2)
             {
-                int y = (int)Math.Pow(x, 2);
-                Console.WriteLine(x + " " + y);
                 Thread.Sleep(1000);
+                int y = (int)Math.Pow(x, 2);
+                Console.WriteLine(x + "\t" + y);
             }
         }
     }
